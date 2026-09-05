@@ -19,21 +19,26 @@ I built this project to bridge what I see on the floor with data-driven operatio
 # Key Findings and Insights
 Which core ingredients are currently below safety stock levels, and how many days of inventory do we have left before we run out?
 * Finding: The Below Reorder Status KPI card confirmed 0 items currently below reorder thresholds, indicating no immediate stockout emergencies in the static baseline snapshot.
+<img src="images/Q1.png" alt="Question 1 Inventory Query" width="800" />
 
 How much revenue are we losing each week due to waste and which items cause the highest financial loss?
 * Finding: Across the simulated window, cumulative spoilage reached $809.82, yielding an elevated 11.00% Waste-to-Sales Ratio. On a weekly basis, total losses ranged between 6 and 28 dollars.
 * Insight: The wide variance shows that kitchen prep is operating on fixed routines rather than adapting to actual customer foot traffic. Kitchen staff should scale down on slow weekdays to keep losses near the lower end of 6 dollars a week.
+<img src="images/Q2.png" alt="Question 2 Waste Summary" width="500" height="300" />
 
 * Finding: The top three ingredients contributing to waste were Uji Matcha Powder, Oat Milk, and Raw Tapioca Pearls.
 * Insight: Matcha Powder and Oat Milk should be ordered in lower quantities. For tapioca, the mid-day batch size should be decreased because sales die down after 6 pm.
+<img src="images/Q2-2.png" alt="Question 2 Waste Breakdown" width="450" height="300" />
 
 Which specific raw ingredients experience the highest burn rate during peak weekend afternoon rushes (2:00-6:00PM)?
 * Finding: Demand spikes sharply between 2-6PM on Friday, Saturday, and Sunday. The peak-hour sales distribution is dominated by Jasmine Green Bubble Milk Tea, Brown Sugar Bubble Milk Tea, and Mango Pomelo/Slush, driving burn on Raw Tapioca Pearls, Whole Milk, Brewed Green & Black Tea, and Mango Puree.
 * Insight: Kitchen teams must schedule dedicated batch-brewing and tapioca boiling before this period to avoid stock outs.
+<img src="images/Q3.png" alt="Question 3 Rush Hour Burn" width="600" height="400" />
 
 Which menu drinks have the highest and lowest profit margins when accounting for raw ingredient costs?
 * Finding: Evaluating the cost of goods sold against retail drink prices reveals exceptionally high gross margins across the menu. Fruit slushes lead at a top margin of 97.7% with other more complex drinks following closely behind.
 * Insight: Since drinks with more toppings like cheese foam and mochi carry high spoilage risk if sales dip, avoid making large batches of these ingredients during the second half of the day.
+<img src="images/Q4.png" alt="Question 4 Profit Margins" width="600" height="300" />
 
 
 
